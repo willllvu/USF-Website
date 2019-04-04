@@ -11,14 +11,17 @@ nav {
     display: inline;
     border-radius: 4px;
     padding-left: 50pt;
+    width: 100%;
 }
 
 @keyframes nav {
     from {
-        margin-left:-100%; 
+        margin-left:-150%; 
+        padding-left: 0pt;
     }
     to {
         margin-left: -5%;
+        padding-left: 500pt;
     }
 }
 
