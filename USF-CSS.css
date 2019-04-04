@@ -36,10 +36,11 @@ nav a {
 footer {
     background-color: #006847;
     align-content: bottom;
+    padding: 20px;
 }
 
 body {
-    background-color: #006847;
+    /* background-color: #006847; */
 }
 
 /* Slide show animation stuff

@@ -1,16 +1,15 @@
 // slideshow business
-var l = 0; //controls when the slides appear
-slideshowme();
-var numberslide = document.getElementsByClassName("slides");//defines the slides
-function slideshowme() {
-    var i; //controls when the slides disappear
-    for (i = 0; i < numberslide.length; i++) {
-        numberslide[i].style.display = 'none';
-    }//counts and causes the slides to DISAPPEAR!
-    l++
-    if (l > numberslide.length) {
-        l = 1;
+var i;
+var l = 0;
+function homepageslideshow() {
+     editslides = document.getElementsByClassName('slides');
+    for (let i = 0; i < editslides.length; i++) {
+        editslides.style.display = 'none';
     }
-    numberslide[l - 1].style.display = "block";
-    setTimeout(slideshowme, 1000);
+    l++;
+    if (l > editslides) {
+        l = 0;
+    }
+    editslides[l-1].style.display = 'block';
 }
+homepageslideshow();
