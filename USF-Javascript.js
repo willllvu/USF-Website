@@ -4,7 +4,6 @@ slideshowme();
 var numberslide = document.getElementsByClassName("slides");//defines the slides
 function slideshowme() {
     var i; //controls when the slides disappear
-
     for (i = 0; i < numberslide.length; i++) {
         numberslide[i].style.display = 'none';
     }//counts and causes the slides to DISAPPEAR!
