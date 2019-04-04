@@ -3,7 +3,8 @@ var i;
 var l = 0;
 function homepageslideshow() {
      editslides = document.getElementsByClassName('slides');
-    for (let i = 0; i < editslides.length; i++) {
+    
+     for (let i = 0; i < editslides.length; i++) {
         editslides.style.display = 'none';
     }
     l++;

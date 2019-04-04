@@ -1,3 +1,4 @@
+/* navigation bar */
 nav {
     display: block;
     background-color: #4f5e63;
@@ -33,6 +34,12 @@ nav a {
     position: relative;
 }
 
+.active {
+    background-color: #000000;
+    padding-top: 19px;
+    padding-bottom: 19px;
+}
+/* footer */
 footer {
     background-color: #006847;
     align-content: bottom;
