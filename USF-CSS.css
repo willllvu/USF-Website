@@ -7,7 +7,9 @@ nav {
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     position: absolute;
-    display: inline-block;
+    display: inline;
+    border-radius: 4px;
+    padding-left: 50pt;
 }
 
 @keyframes nav {
@@ -15,8 +17,7 @@ nav {
         margin-left:-100%; 
     }
     to {
-        margin-left: 0%;
-        text-align: center;
+        margin-left: -5%;
     }
 }
 
