@@ -50,9 +50,9 @@ obtained in the LICENSE.md file.
 This Website has many terms and conditions. A copy of these terms and conditions may be obtained in the TERMS_OF_USE.md file.
 
 <hr />
-
-<h4> Lastly, and most importantly, we hope you enjoy the Muma College Of Business website, we certainly do! </h4>
-
+<br />
+<br />
+<br />
 <br />
 <br />
 <br />
