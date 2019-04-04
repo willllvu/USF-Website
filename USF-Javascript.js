@@ -20,6 +20,6 @@ function homepageslideshow() {
         }
         l++;
         if (l === editslides.length) l = 0;
-        setTimeout(homepageslideshow, 2000);
+        setTimeout(homepageslideshow, 8000);
 }
 homepageslideshow();

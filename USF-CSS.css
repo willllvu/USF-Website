@@ -78,13 +78,13 @@ make sure to make changes to both the normal animation parts
 and to the -webkit- to ensure compatibility */
 
 .slides {
-    width: 100px;
+    width: 300px;
     -webkit-animation-name: slide;
-    -webkit-animation-duration: 3s;
+    -webkit-animation-duration: 8s;
     animation-name: slide;
-    animation-duration: 3s;
-    position: relative;
+    animation-duration: 8s;
     display: none;
+    position: absolute;
 
 }
 
@@ -95,11 +95,17 @@ and to the -webkit- to ensure compatibility */
 }
 
 @keyframes slide {
-    from {
+    0% {
         opacity:0;
     }
-    to {
+    30% {
         opacity:1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
 
