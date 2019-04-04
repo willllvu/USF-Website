@@ -6,6 +6,8 @@ nav {
     -webkit-animation: nav 2s ;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    position: absolute;
+    display: inline-block;
 }
 
 @keyframes nav {
@@ -27,6 +29,7 @@ nav a {
     /* this font is here temporarily, to soothe my eyes */
     font-family: Arial, Helvetica, sans-serif;
     /* I'll remove the font once you pry it from my cold hands */
+    position: relative;
 }
 
 footer {
