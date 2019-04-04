@@ -1,0 +1,38 @@
+nav {
+    display: block;
+    background-color: #4f5e63;   
+    padding: 14pt;
+}
+nav a{
+    padding-left: 5pt;
+    padding-right: 5pt;
+    text-decoration: none;
+    color: white;
+    font-size: 15pt;
+    /* this font is here temporarily, to soothe my eyes */
+    font-family: Arial, Helvetica, sans-serif; 
+    /* I'll remove the font once you pry it from my cold hands */
+}
+footer {
+    background-color: #006847;
+    align-content: bottom;
+}
+/* Slide show animation stuff
+make sure to make changes to both the normal animation parts
+and to the -webkit- to ensure compatibility */
+div img {
+    width: 100%;
+    -webkit-animation-name: slide;
+    -webkit-animation-duration: 3s;
+    animation-name: slide;
+    animation-duration: 3s;
+    position: relative;
+}
+@keyframes slide {
+    from{left:0%;}
+    to{left: 120%;}
+}
+@-webkit-keyframes slide {
+    from{left:0%;}
+    to{left: 120%;}
+}
