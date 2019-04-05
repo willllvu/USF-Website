@@ -1,3 +1,10 @@
+/* CSS document for the USF website */
+body {
+}
+
+h1 {
+    font-family: 'Questrial', sans-serif;
+}
 /* navigation bar */
 nav {
     display: block;
@@ -10,9 +17,9 @@ nav {
     position: absolute;
     display: inline;
     border-radius: 4px;
-    padding-left: 5p0t;
+    padding-left: 5px;
     width: 100%;
-}
+   }
 
 @keyframes nav {
     from {
@@ -31,27 +38,26 @@ nav a {
     text-decoration: none;
     color: white;
     font-size: 20pt;
-    /* this font is here temporarily, to soothe my eyes */
-    font-family: Arial, Helvetica, sans-serif;
-    /* I'll remove the font once you pry it from my cold hands */
     position: relative;
-
+    font-family: 'Questrial', sans-serif;
+    margin-left: 50px;
 }
 
 nav a:hover {
-    background-color: #009945;
-    padding-top: 19px;
-    padding-bottom: 19px;
+    background-color: #006847;
+    padding-top: 22px;
+    padding-bottom: 18px;
     overflow: hidden;
 }
 
 .active {
     background-color: #000000;
-    padding-top: 19px;
-    padding-bottom: 19px;
+    padding-top: 20px;
+    padding-bottom: 18px;
 }
 
 #usflogo {
+    display: block;
 }
 
 #mumalogo {
@@ -62,37 +68,25 @@ nav a:hover {
     margin-right: -4px;
 }
 
-/* footer */
-footer {
-    background-color: #006847;
-    align-content: bottom;
-    padding: 20px;
-}
-
-body {
-    /* background-color: #006847; */
-}
-
 /* Slide show animation stuff
 make sure to make changes to both the normal animation parts
 and to the -webkit- to ensure compatibility */
-
 .slides {
-    width: 300px;
+    width: 900px;
+    height: 500px;
     -webkit-animation-name: slide;
     -webkit-animation-duration: 8s;
     animation-name: slide;
     animation-duration: 8s;
     display: none;
     position: absolute;
+    float: left;
+    margin-left: 230px;
 
 }
 
 .slideshow {
     position: absolute;
-    width:500px;
-    height: 300px;
-    float: left;
 }
 
 @keyframes slide {
@@ -117,4 +111,33 @@ opacity:0;
     to {
         opacity:1;
     }
+}
+
+/* footer */
+footer {
+    background-color: #006847;
+    padding: 20px;
+    width: 100%;
+    margin-left: -11px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* content spaces */
+.slidebelow {
+    clear: both;
+    margin-top: 520px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.slideaside {
+    background-color: #006847;
+    width: 500px;
+    height: 490px;
+    float: left;
+    padding-left: 10px;
+    border: 5px solid #006847;
+    margin-left: 1130px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
 }
