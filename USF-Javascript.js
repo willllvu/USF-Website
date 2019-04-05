@@ -16,7 +16,6 @@ function homepageslideshow() {
             if (i === l) editslides[l].style.display = 'block';
             else editslides[i].style.display = 'none';
             console.log(i + " " + editslides[i]);
-            console.log(l);
         }
         l++;
         if (l === editslides.length) l = 0;
