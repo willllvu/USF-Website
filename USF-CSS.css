@@ -92,6 +92,7 @@ and to the -webkit- to ensure compatibility */
     position: absolute;
     width:500px;
     height: 300px;
+    float: left;
 }
 
 @keyframes slide {
