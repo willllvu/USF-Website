@@ -8,7 +8,7 @@ h1 {
 /* navigation bar */
 nav {
     display: block;
-    background-color: #4f5e63;
+    background-color: #01553e;
     padding: 14pt;
     animation: nav 2s ;
     -webkit-animation: nav 2s ;
@@ -19,6 +19,7 @@ nav {
     border-radius: 4px;
     padding-left: 5px;
     width: 100%;
+    color: rgb(224, 255, 50);
    }
 
 @keyframes nav {
@@ -36,7 +37,7 @@ nav a {
     padding-left: 50pt;
     padding-right: 50pt;
     text-decoration: none;
-    color: white;
+    color: rgb(224, 255, 50);
     font-size: 20pt;
     position: relative;
     font-family: 'Questrial', sans-serif;
@@ -44,25 +45,28 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #006847;
+    background-color:black;
+    opacity: 25%;
     padding-top: 22px;
     padding-bottom: 18px;
     overflow: hidden;
 }
 
 .active {
-    background-color: #000000;
-    padding-top: 20px;
+    background-color: rgb(0, 0, 0);
+    padding-top: 23px;
     padding-bottom: 18px;
+    opacity: 0.60;
 }
 
 
 #mumalogo {
     height: 69px;
     margin-top: -19px;
-    margin-bottom: -25px;
-    margin-left: -45px;
+    margin-bottom: -24px;
+    margin-left: -40px;
     margin-right: -4px;
+
 }
 
 /* Slide show animation stuff
@@ -143,4 +147,12 @@ footer {
     margin-left: 1130px;
     color: white;
     font-family: 'Roboto', sans-serif;
+    font-size: 125%; /*bananya is booty-face*/
+}
+.slideaside h1 {
+    color: rgb(224, 255, 50);
+}
+
+.news {
+    text-align: center;
 }
