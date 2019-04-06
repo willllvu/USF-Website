@@ -20,6 +20,7 @@ nav {
     padding-left: 5px;
     width: 100%;
     color: rgb(224, 255, 50);
+    overflow: hidden;
    }
 
 @keyframes nav {
@@ -42,6 +43,10 @@ nav a {
     position: relative;
     font-family: 'Questrial', sans-serif;
     margin-left: 50px;
+}
+
+#icon {
+    display: none;
 }
 
 nav a:hover {
@@ -67,6 +72,14 @@ nav a:hover {
     margin-left: -40px;
     margin-right: -4px;
 
+}
+
+@media screen and (max-width: 600px) {
+    nav a:not(:first-child) {display: none}
+    #icon {
+        float: left;
+        display: block
+    }
 }
 
 /* Slide show animation stuff
@@ -151,8 +164,17 @@ footer {
 }
 .slideaside h1 {
     color: rgb(224, 255, 50);
+    opacity: 0.75;
 }
 
 .news {
     text-align: center;
+}
+
+th {
+    padding: 50px;
+}
+
+table {
+    margin: auto;
 }
