@@ -148,6 +148,7 @@ footer {
     clear: both;
     margin: 520px 0px 0px 0px auto;
     font-family: 'Roboto', sans-serif;
+    margin-left: 220px;
 }
 
 .slideaside {
@@ -183,5 +184,6 @@ td {
 table {
     border: 5px solid #01553e;
     float: left;
-    
+    margin: 10px;
+    font-size: 110%;
 }
