@@ -146,7 +146,7 @@ footer {
 /* content spaces */
 .slidebelow {
     clear: both;
-    margin-top: 520px;
+    margin: 520px 0px 0px 0px auto;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -172,9 +172,16 @@ footer {
 }
 
 th {
-    padding: 50px;
+    padding: 20px 10px;
+    text-align: left;
+}
+
+td {
+    padding: 5px 10px;
 }
 
 table {
-    margin: auto;
+    border: 5px solid #01553e;
+    float: left;
+    
 }
