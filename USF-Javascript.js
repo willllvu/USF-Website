@@ -12,3 +12,8 @@ function homepageslideshow() {
         setTimeout(homepageslideshow, 8000);
 }
 homepageslideshow();
+
+function dropdown() {
+    dropdowncontent = document.getElementsByClassName('normal');
+    dropdowncontent.style.display = 'none';
+}

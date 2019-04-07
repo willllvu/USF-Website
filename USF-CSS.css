@@ -1,11 +1,14 @@
 /* CSS document for the USF website */
+
+/* standard styles that should be present on all pages */
 body{
     
 }
-
-
-h1 {
+h1, h2 {
     font-family: 'Questrial', sans-serif;
+}
+p, li, ul, ol {
+    font-family: 'Roboto', sans-serif;
 }
 /* navigation bar */
 nav {
@@ -73,23 +76,18 @@ nav a:hover {
     margin-bottom: -24px;
     margin-left: -40px;
     margin-right: -4px;
-
 }
 
-@media screen and (max-width: 600px) {
-    nav a:not(:first-child) {display: none}
-    #icon {
-        float: left;
-        display: block
+/* @keyframes disappear {
+    to {
+        
     }
-}
-
-/* responsive design code */
-
+} */
 
 /* Slide show animation stuff
 make sure to make changes to both the normal animation parts
 and to the -webkit- to ensure compatibility */
+
 .slides {
     width: 900px;
     height: 500px;
