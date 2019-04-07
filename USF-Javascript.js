@@ -13,7 +13,3 @@ function homepageslideshow() {
 }
 homepageslideshow();
 
-function dropdown() {
-    logodropdown = document.getElementById('mumalogo');
-    
-}
