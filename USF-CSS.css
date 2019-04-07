@@ -76,23 +76,33 @@ nav a:hover {
     margin-bottom: -24px;
     margin-left: -40px;
     margin-right: -4px;
-
 }
 
-@media screen and (max-width: 600px) {
-    nav a:not(:first-child) {display: none}
-    #icon {
-        float: left;
-        display: block
+.dropdown-links {
+    display: none;
+    text-decoration: none;
+    color:black;
+    background-color: orange;
+    position: relative;
+    z-index: 1;
+}
+
+.dropdown-container:hover .dropdown-links {
+    display: inline-block;
+    /* animation-name: disappear;
+    animation-duration: 1s; */
+}
+
+/* @keyframes disappear {
+    to {
+        
     }
-}
-
-/* responsive design code */
-
+} */
 
 /* Slide show animation stuff
 make sure to make changes to both the normal animation parts
 and to the -webkit- to ensure compatibility */
+
 .slides {
     width: 900px;
     height: 500px;
