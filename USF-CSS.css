@@ -234,6 +234,15 @@ footer {
     }
 }
 
+@-webkit-keyframes flyby {
+    from {
+        margin-left:-1200px;
+    }
+    to {
+        margin-left:220px;
+    }
+}
+
 .news {
     text-align: center;
 }
