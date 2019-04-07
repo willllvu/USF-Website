@@ -13,9 +13,11 @@ p, li, ul, ol {
 }
 /* navigation bar */
 nav {
-    display: block;
     background-color: #01553e;
-    padding: 14pt;
+    padding-top: 14pt;
+    padding-bottom: 14pt;
+    padding-left:1vw;
+    padding-right: 1vw;
     animation: nav 2s ;
     -webkit-animation: nav 2s ;
     animation-fill-mode: forwards;
@@ -41,12 +43,12 @@ nav {
 }
 /*Text in nav bar*/
 nav a {
-    padding-left: 50pt;
-    padding-right: 50pt;
+    padding-left: 3vw;
+    padding-right: 3vw;
     text-decoration: none;
     color: rgb(224, 255, 50);
     font-size: 20pt;
-    position: relative;
+    position: static;
     font-family: 'Questrial', sans-serif;
     margin-left: 50px;
 }
@@ -80,8 +82,8 @@ nav a:hover {
     display:initial;
 }
 
-@media screen and (max-width: 500px){
-    .normal {display:none} 
+@media screen and (max-width: 1200px){
+    /* .grad{} */
     
 }
 
