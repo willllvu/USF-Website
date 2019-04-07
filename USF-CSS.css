@@ -1,11 +1,14 @@
 /* CSS document for the USF website */
+
+/* standard styles that should be present on all pages */
 body{
     
 }
-
-
-h1 {
+h1, h2 {
     font-family: 'Questrial', sans-serif;
+}
+p, li, ul, ol {
+    font-family: 'Roboto', sans-serif;
 }
 /* navigation bar */
 nav {
