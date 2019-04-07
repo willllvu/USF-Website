@@ -2,6 +2,9 @@
 
 /* standard styles that should be present on all pages */
 
+body {
+    background-color: #FAFAFA;
+}
 h1, h2 {
     font-family: 'Questrial', sans-serif;
 }

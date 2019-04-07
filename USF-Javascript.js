@@ -13,10 +13,7 @@ function homepageslideshow() {
 }
 homepageslideshow();
 
-// function dropdown() {
-//     dropdowncontent = document.getElementsByClassName('normal');
-//     for (let i = 0; i < dropdowncontent.length; i++) {
-//             dropdowncontent[i].style.display = 'none';
-//             console.log(i + 'disappear time!');
-//     }
-// }
+function dropdown() {
+    logodropdown = document.getElementById('mumalogo');
+    
+}
