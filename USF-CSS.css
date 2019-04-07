@@ -1,9 +1,7 @@
 /* CSS document for the USF website */
 
 /* standard styles that should be present on all pages */
-body{
-    
-}
+
 h1, h2 {
     font-family: 'Questrial', sans-serif;
 }
@@ -78,6 +76,11 @@ nav a:hover {
     margin-right: -4px;
 }
 
+@media screen and (max-width: 500px){
+    .normal {display:none} 
+    
+}
+
 /* @keyframes disappear {
     to {
         
@@ -144,7 +147,7 @@ footer {
     margin-left: -11px;
     color: white;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     clear: both;
     position: static;
 }
