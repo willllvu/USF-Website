@@ -41,6 +41,18 @@ nav {
         padding-left: 100pt;
     }
 }
+
+@-webkit-keyframes nav {
+    from {
+        margin-left:-150%; 
+        padding-left: 0pt;
+    }
+    to {
+        margin-left: -5%;
+        padding-left: 100pt;
+    }
+}
+
 /*Text in nav bar*/
 nav a {
     padding-left: 3vw;
@@ -169,6 +181,8 @@ footer {
     margin: 520px 0px 0px 0px auto;
     font-family: 'Roboto', sans-serif;
     margin-left: 220px;
+    animation-name: flyby;
+    animation-duration: 2s;
 }
 
 .slideaside {
@@ -181,11 +195,43 @@ footer {
     margin-left: 1130px;
     color: white;
     font-family: 'Roboto', sans-serif;
-    font-size: 125%; /*bananya is booty-face*/
+    font-size: 125%; 
+    animation-name: flyin;
+    animation-duration: 2s;
+    -webkit-animation-name: flyin;
+    -webkit-animation-duration: 2s;
+    position: relative;
 }
 .slideaside h1 {
     color: rgb(224, 255, 50);
     opacity: 0.75;
+}
+
+@keyframes flyin {
+    from {
+        margin-left: 1920px;
+    }
+    to {
+        margin-right:1130px;
+    }
+}
+
+@-webkit-keyframes flyin {
+    from {
+        margin-left: 1920px;
+    }
+    to {
+        margin-right:1130px;
+    }
+}
+
+@keyframes flyby {
+    from {
+        margin-left:-1200px;
+    }
+    to {
+        margin-left:220px;
+    }
 }
 
 .news {
