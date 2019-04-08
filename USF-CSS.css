@@ -176,6 +176,10 @@ footer {
     width: 100%;
 }
 /* content spaces */
+
+section {
+    margin: 0px 230px 0px 230px;
+}
 .slidebelow {
     clear: both;
     margin: 520px 0px 0px 0px auto;
