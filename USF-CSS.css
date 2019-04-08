@@ -33,23 +33,19 @@ nav {
 
 @keyframes nav {
     from {
-        margin-left:-150%; 
-        padding-left: 0pt;
+        transform: translateX(-1920px);
     }
     to {
-        margin-left: -5%;
-        padding-left: 100pt;
+        transform: translateX(-20px);
     }
 }
 
 @-webkit-keyframes nav {
     from {
-        margin-left:-150%; 
-        padding-left: 0pt;
+        transform: translateX(-1920px);
     }
     to {
-        margin-left: -5%;
-        padding-left: 100pt;
+        transform: translateX(-20px);
     }
 }
 
