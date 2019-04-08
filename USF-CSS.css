@@ -29,23 +29,28 @@ nav {
     width: 100%;
     color: rgb(224, 255, 50);
     overflow: hidden;
+    top:0px;
    }
 
 @keyframes nav {
     from {
-        transform: translateX(-1920px);
+        margin-left:-150%; 
+        padding-left: 0pt;
     }
     to {
-        transform: translateX(-20px);
+        margin-left: -5%;
+        padding-left: 100pt;
     }
 }
 
 @-webkit-keyframes nav {
     from {
-        transform: translateX(-1920px);
+        margin-left:-150%; 
+        padding-left: 0pt;
     }
     to {
-        transform: translateX(-20px);
+        margin-left: -5%;
+        padding-left: 100pt;
     }
 }
 
@@ -164,11 +169,11 @@ footer {
     font-size: 15px;
     clear: both;
     position: static;
+    bottom: 0;
 }
 
 .footer {
     position: static;
-    bottom: 0;
     width: 100%;
 }
 /* content spaces */
