@@ -12,8 +12,3 @@ function homepageslideshow() {
         setTimeout(homepageslideshow, 8000);
 }
 homepageslideshow();
-
-function spinny() {
-    spinner = document.getElementsByClassName('spin');
-    spinner[0].style.display = 'none';
-}
