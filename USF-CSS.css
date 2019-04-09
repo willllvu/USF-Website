@@ -7,6 +7,8 @@ body {
 }
 
 figcaption {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
     color: #01553e;
 }
 
