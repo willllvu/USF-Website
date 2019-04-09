@@ -6,6 +6,10 @@ body {
     background-color: #FAFAFA;
 }
 
+figcaption {
+    color: #01553e;
+}
+
 h1 {
     margin: 0px;
     font-size: 250%;
