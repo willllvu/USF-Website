@@ -394,7 +394,43 @@ table {
 footer a:link, footer a:active, footer, footer a {
     color: white;
 }
+
+.titleslidein {
+    animation: title 2s;
+    -webkit-animation: title 2s;
+    -moz-animation: title 2s;
+    will-change: transform;
+} 
+
+@keyframes title {
+    from {
+        transform: translateX(-800px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@-moz-keyframes title {
+    from {
+        transform: translateX(-800px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@-webkit-keyframes title {
+    from {
+        transform: translateX(-800px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
 /* Improvements to performance:
 added vendor specific prefixes 
-made animations run in the composite layer within the critical rendering path
+made animations run in the composite layer within the critical rendering path instead of the styles
+and added the will-change style so the browser understands and can optimize
  */
