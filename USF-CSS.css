@@ -157,7 +157,6 @@ nav a:hover {
     nav a:hover {
         display: relative;
         padding-right: 0px;
-        background: none;
         padding-left: 0px;
         padding-top: 0px;
         padding-bottom: 0px;
@@ -170,7 +169,9 @@ nav a:hover {
         padding-left: 0px;
         padding-right: 0px;
     }
-} 
+}
+
+
 
 /* @keyframes disappear {
     to {
@@ -196,6 +197,7 @@ and to the -webkit- to ensure compatibility */
     float: left;
     margin-left: 230px;
     will-change: opacity;
+    z-index: 0;
 }
 
 .slideshow {
@@ -291,10 +293,10 @@ section {
     background-color: #006847;
     width: 500px;
     height: 490px;
-    float: left;
+    /* float: left; */
     padding-left: 10px;
     border: 5px solid #006847;
-    margin-left: 1130px;
+    transform: translateX(1130px);
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 125%;
@@ -305,7 +307,7 @@ section {
     -moz-animation-name: flyin;
     -moz-animation-duration: 2s;
     position: relative;
-    will-change: margin-left, margin-right;
+    will-change: transform;
 }
 
 .slideaside h1 {
@@ -315,34 +317,34 @@ section {
 
 @keyframes flyin {
     from {
-        margin-left: 1920px;
+        transform: translateX(1920px);
     }
     to {
-        margin-right: 1130px;
+        transform: translateX(1130px);
     }
 }
 
 @-webkit-keyframes flyin {
     from {
-        margin-left: 1920px;
+        transform: translateX(1920px);
     }
     to {
-        margin-right: 1130px;
+        transform: translateX(1130px);
     }
 }
 
 @-moz-keyframes flyin {
     from {
-        margin-left: 1920px;
+        transform: translateX(1920px);
     }
-    to {
-        margin-right: 1130px;
+    to {    
+        transform: translateX(1130px);
     }
 }
 
 @keyframes flyby {
     from {
-        transform: translateX(-1200px);
+        transform: translateX(-1900px);
     }
     to {
         transform: translateX(0px);
@@ -351,7 +353,7 @@ section {
 
 @-webkit-keyframes flyby {
     from {
-        transform: translateX(-1200px);
+        transform: translateX(-1900px);
     }
     to {
         transform: translateX(0px);
@@ -360,7 +362,7 @@ section {
 
 @-moz-keyframes flyby {
     from {
-        transform: translateX(-1200px);
+        transform: translateX(-1900px);
     }
     to {
         transform: translateX(0px);
@@ -376,7 +378,7 @@ th {
     text-align: left;
     color: rgb(224, 255, 50);
     font-size: 120%;
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 td {
@@ -393,7 +395,7 @@ table {
     color: #FFFFFF;
 }
 
-footer a:link, footer a:active {
+footer a:link, footer a:active, footer, footer a {
     color: white;
 }
 /* Improvements to performance:
