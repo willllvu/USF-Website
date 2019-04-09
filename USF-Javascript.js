@@ -13,3 +13,7 @@ function homepageslideshow() {
 }
 homepageslideshow();
 
+function spinny() {
+    spinner = document.getElementsByClassName('spin');
+    spinner[0].style.display = 'none';
+}
