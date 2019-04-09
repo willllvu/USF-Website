@@ -146,7 +146,7 @@ nav a:hover {
 }
 /* responsive page design that lowers the font up to a certain point */
 
- /* @media screen and (max-width: 1800px) {
+ @media screen and (max-width: 1800px) {
     nav a {
         padding-left: 2vw;
         padding-right: 2vw;
@@ -173,7 +173,7 @@ nav a:hover {
         padding-left: 0.2vw;
         padding-right: 0.2vw;
     }
-} */
+}
 
 /* Slide show animation stuff
 make sure to make changes to both the normal animation parts
