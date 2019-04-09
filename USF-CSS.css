@@ -5,21 +5,57 @@
 body {
     background-color: #FAFAFA;
 }
-h1, h2 {
+
+h1 {
+    margin: 0px;
+    font-size: 250%;
     font-family: 'Questrial', sans-serif;
 }
+
+h2 {
+    font-family: 'Questrial', sans-serif;
+    margin: 0px;
+    font-size: 200%;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 120%;
+    width: 100%;
+}
+
+hr {
+    height: 3px;
+    background-color: #01553e;
+    opacity: 0.7;
+}
+
+ul {
+    font-family: 'Roboto', sans-serif;
+    font-size: 120%;
+    list-style-type: none;
+}
+
 p, li, ul, ol {
     font-family: 'Roboto', sans-serif;
 }
+
+i {
+    margin: 0px 5px;
+    color: #01553e;
+}
+
 /* navigation bar */
+
 nav {
+    z-index: 1;
     background-color: #01553e;
     padding-top: 14pt;
     padding-bottom: 14pt;
-    padding-left:1vw;
+    padding-left: 1vw;
     padding-right: 1vw;
-    animation: nav 2s ;
-    -webkit-animation: nav 2s ;
+    animation: nav 2s;
+    -webkit-animation: nav 2s;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     position: absolute;
@@ -29,12 +65,12 @@ nav {
     width: 100%;
     color: rgb(224, 255, 50);
     overflow: hidden;
-    top:0px;
-   }
+    top: 0px;
+}
 
 @keyframes nav {
     from {
-        margin-left:-150%; 
+        margin-left: -150%;
         padding-left: 0pt;
     }
     to {
@@ -45,7 +81,7 @@ nav {
 
 @-webkit-keyframes nav {
     from {
-        margin-left:-150%; 
+        margin-left: -150%;
         padding-left: 0pt;
     }
     to {
@@ -55,6 +91,7 @@ nav {
 }
 
 /*Text in nav bar*/
+
 nav a {
     padding-left: 3vw;
     padding-right: 3vw;
@@ -71,7 +108,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color:black;
+    background-color: black;
     padding-top: 22px;
     padding-bottom: 18px;
     overflow: hidden;
@@ -85,20 +122,41 @@ nav a:hover {
     opacity: 0.90;
 }
 
-
 #mumalogo {
     height: 69px;
     margin-top: -19px;
     margin-bottom: -24px;
     margin-left: -40px;
     margin-right: -4px;
-    display:initial;
+    display: initial;
 }
 
-@media screen and (max-width: 1200px){
-    /* .grad{} */
-    
-}
+ @media screen and (max-width: 1000px) {
+    nav a {
+        display: block;
+    }
+    .active {
+        padding-top: 0px;
+        background: none;
+        padding-bottom: 0px;
+    }
+    nav a:hover {
+        display: relative;
+        padding-right: 0px;
+        background: none;
+        padding-left: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    #mumalogo {
+        position: relative;
+        pointer-events: none;
+        padding-bottom: 10px;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+} 
 
 /* @keyframes disappear {
     to {
@@ -121,7 +179,6 @@ and to the -webkit- to ensure compatibility */
     position: absolute;
     float: left;
     margin-left: 230px;
-
 }
 
 .slideshow {
@@ -130,10 +187,10 @@ and to the -webkit- to ensure compatibility */
 
 @keyframes slide {
     0% {
-        opacity:0;
+        opacity: 0;
     }
     30% {
-        opacity:1;
+        opacity: 1;
     }
     70% {
         opacity: 1;
@@ -145,10 +202,10 @@ and to the -webkit- to ensure compatibility */
 
 @-webkit-keyframes slide {
     0% {
-        opacity:0;
+        opacity: 0;
     }
     30% {
-        opacity:1;
+        opacity: 1;
     }
     70% {
         opacity: 1;
@@ -159,6 +216,7 @@ and to the -webkit- to ensure compatibility */
 }
 
 /* footer */
+
 footer {
     background-color: #006847;
     padding: 20px;
@@ -176,11 +234,13 @@ footer {
     position: static;
     width: 100%;
 }
+
 /* content spaces */
 
 section {
     margin: 0vw 12vw 0vw 12vw;
 }
+
 .slidebelow {
     clear: both;
     margin: 520px 0px 0px 0px auto;
@@ -200,13 +260,14 @@ section {
     margin-left: 1130px;
     color: white;
     font-family: 'Roboto', sans-serif;
-    font-size: 125%; 
+    font-size: 125%;
     animation-name: flyin;
     animation-duration: 2s;
     -webkit-animation-name: flyin;
     -webkit-animation-duration: 2s;
     position: relative;
 }
+
 .slideaside h1 {
     color: rgb(224, 255, 50);
     opacity: 0.75;
@@ -217,7 +278,7 @@ section {
         margin-left: 1920px;
     }
     to {
-        margin-right:1130px;
+        margin-right: 1130px;
     }
 }
 
@@ -226,25 +287,25 @@ section {
         margin-left: 1920px;
     }
     to {
-        margin-right:1130px;
+        margin-right: 1130px;
     }
 }
 
 @keyframes flyby {
     from {
-        margin-left:-1200px;
+        margin-left: -1200px;
     }
     to {
-        margin-left:220px;
+        margin-left: 220px;
     }
 }
 
 @-webkit-keyframes flyby {
     from {
-        margin-left:-1200px;
+        margin-left: -1200px;
     }
     to {
-        margin-left:220px;
+        margin-left: 220px;
     }
 }
 
@@ -273,6 +334,7 @@ table {
     background-color: #006847;
     color: #FFFFFF;
 }
+
 footer a:link, footer a:active {
     color: white;
 }
