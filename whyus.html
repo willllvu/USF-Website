@@ -29,10 +29,19 @@
         }
         
         #secondlist {
-            width: 500px;
+            width: 1000px;
             /*float: left;*/
             overflow: hidden;
-            margin: auto;
+            /* margin: auto; */
+            column-count: 3;
+            column-gap: 10px;
+            -moz-column-count: 3;
+            -moz-column-gap: 10px;
+            -webkit-column-count: 3;
+            -webkit-column-gap: 10px;
+            column-width: 50px;
+            -moz-column-width:50px;
+            -webkit-column-width:50px;
         }
 
         ul {
@@ -68,8 +77,7 @@
 
         .lists {
             float:left;
-            column-count: 3;
-            column-gap: 10px;
+            width: 1000px;
         }
 
         .subHeading1 {
@@ -90,7 +98,7 @@
 			font-family: 'Roboto', sans-serif;
 		}
 		
-		subHeading1 a:link, subHeading1 a:active {
+		.subHeading1 a:link, .subHeading1 a:active {
 			color: black;
 			}
     </style>

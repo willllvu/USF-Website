@@ -61,8 +61,10 @@ nav {
     padding-left: 1vw;
     padding-right: 1vw;
     animation: nav 2s;
-    -webkit-animation: nav 2s;
     animation-fill-mode: forwards;
+    -moz-animation: nav 2s;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation: nav 2s;
     -webkit-animation-fill-mode: forwards;
     position: absolute;
     display: inline;
@@ -72,27 +74,33 @@ nav {
     color: rgb(224, 255, 50);
     overflow: hidden;
     top: 0px;
+    will-change: animation, transform, padding-left, margin-left;
 }
 
 @keyframes nav {
     from {
-        margin-left: -150%;
-        padding-left: 0pt;
+        transform: translateX(-2000px);
     }
     to {
-        margin-left: -5%;
-        padding-left: 100pt;
+        transform: translateX(-10px);
     }
 }
 
 @-webkit-keyframes nav {
     from {
-        margin-left: -150%;
-        padding-left: 0pt;
+        transform: translateX(-2000px);
     }
     to {
-        margin-left: -5%;
-        padding-left: 100pt;
+        transform: translateX(-10px);
+    }
+}
+
+@-moz-keyframes nav {
+    from {
+        transform: translateX(-2000px);
+    }
+    to {
+        transform: translateX(-10px);
     }
 }
 
@@ -181,14 +189,32 @@ and to the -webkit- to ensure compatibility */
     -webkit-animation-duration: 8s;
     animation-name: slide;
     animation-duration: 8s;
+    -moz-animation-name: slide;
+    -moz-animation-duration: 8s;
     display: none;
     position: absolute;
     float: left;
     margin-left: 230px;
+    will-change: opacity;
 }
 
 .slideshow {
     position: absolute;
+}
+
+@-moz-keyframes slide {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 @keyframes slide {
@@ -254,6 +280,11 @@ section {
     margin-left: 220px;
     animation-name: flyby;
     animation-duration: 2s;
+    -webkit-animation-name: flyby;
+    -webkit-animation-duration: 2s;
+    -moz-animation-name: flyby;
+    -moz-animation-duration: 2s;
+    will-change: margin-left, margin-right;
 }
 
 .slideaside {
@@ -271,7 +302,10 @@ section {
     animation-duration: 2s;
     -webkit-animation-name: flyin;
     -webkit-animation-duration: 2s;
+    -moz-animation-name: flyin;
+    -moz-animation-duration: 2s;
     position: relative;
+    will-change: margin-left, margin-right;
 }
 
 .slideaside h1 {
@@ -297,21 +331,39 @@ section {
     }
 }
 
-@keyframes flyby {
+@-moz-keyframes flyin {
     from {
-        margin-left: -1200px;
+        margin-left: 1920px;
     }
     to {
-        margin-left: 220px;
+        margin-right: 1130px;
+    }
+}
+
+@keyframes flyby {
+    from {
+        transform: translateX(-1200px);
+    }
+    to {
+        transform: translateX(0px);
     }
 }
 
 @-webkit-keyframes flyby {
     from {
-        margin-left: -1200px;
+        transform: translateX(-1200px);
     }
     to {
-        margin-left: 220px;
+        transform: translateX(0px);
+    }
+}
+
+@-moz-keyframes flyby {
+    from {
+        transform: translateX(-1200px);
+    }
+    to {
+        transform: translateX(0px);
     }
 }
 
@@ -344,3 +396,7 @@ table {
 footer a:link, footer a:active {
     color: white;
 }
+/* Improvements to performance:
+added vendor specific prefixes 
+made animations run in the composite layer within the critical rendering path
+ */
