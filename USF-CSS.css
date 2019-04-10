@@ -258,6 +258,7 @@ footer {
     clear: both;
     position: static;
     bottom: 0;
+    text-decoration: none;
 }
 
 .footer {
