@@ -266,6 +266,10 @@ footer {
     width: 100%;
 }
 
+.footercontent {
+    text-align: center;
+}
+
 /* content spaces */
 
 section {
