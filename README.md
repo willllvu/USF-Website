@@ -19,20 +19,19 @@ Muma College of Business.
 <hr />
 
 <h2> Different Parts of the Website? </h2>
-Our website has 6 main pages. 
+Our website has 5 main pages. 
 <ul>
 <li>The HOME page</li>
 <li>The BENEFITS page</li> 
 <li>The GRAD page</li> 
 <li>The UNDERGRAD page</li> 
 <li>The WHY US? page</li>
-<li>The CONTACT US page</li>
 </ul>
 Each of 
 these pages serve a different purpose, they each inform you of a different part of the Muma College Of Business. The HOME page tells
 you the latest in the Muma College Of Business. The BENEFITS page tells you the advantages of attending the Muma College Of Business.
 The GRAD page educates you about our Graduate program at the Muma College Of Business. The UNDERGRAD page tells you more about the 
-Undergraduate program at the Muma College Of Business, the WHY US? page explains our benefits over other business college schools, and the CONTACT US page provides information for contacting the Muma College of business.
+Undergraduate program at the Muma College Of Business, and the WHY US? page explains our benefits over other business college schools.
 
 <hr />
 
